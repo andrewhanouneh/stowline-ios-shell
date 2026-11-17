@@ -1,0 +1,47 @@
+{
+  "appId": "org.stowline.app",
+  "appName": "Stowline",
+  "webDir": "dist-www",
+  "backgroundColor": "#0D1013",
+  "appendUserAgent": "StowlineApp/1",
+  "loggingBehavior": "none",
+  "server": {
+    "url": "https://app.stowline.org/",
+    "errorPath": "offline.html",
+    "allowNavigation": [
+      "app.stowline.org"
+    ],
+    "androidScheme": "https",
+    "cleartext": false
+  },
+  "ios": {
+    "backgroundColor": "#0D1013",
+    "contentInset": "never",
+    "scrollEnabled": true,
+    "allowsLinkPreview": false,
+    "limitsNavigationsToAppBoundDomains": true,
+    "preferredContentMode": "mobile"
+  },
+  "android": {
+    "backgroundColor": "#0D1013",
+    "allowMixedContent": false,
+    "captureInput": false,
+    "webContentsDebuggingEnabled": false
+  },
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 900,
+      "launchAutoHide": true,
+      "launchFadeOutDuration": 250,
+      "backgroundColor": "#0D1013",
+      "showSpinner": false,
+      "androidScaleType": "CENTER_CROP",
+      "splashFullScreen": false,
+      "splashImmersive": false
+    },
+    "SystemBars": {
+      "insetsHandling": "native",
+      "style": "DARK"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "stowline-store-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Stowline for iOS and Android: a Capacitor shell around the hosted app, with native share, files, haptics and an offline screen.",
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "configure": "node scripts/configure.mjs",
+    "patch": "node scripts/patch-native.mjs",
+    "sync:ios": "node scripts/configure.mjs && cap sync ios",
+    "sync:android": "node scripts/configure.mjs && cap sync android && node scripts/patch-native.mjs android"
+  },
+  "dependencies": {
+    "@capacitor/android": "8.5.3",
+    "@capacitor/app": "8.1.2",
+    "@capacitor/browser": "8.0.5",
+    "@capacitor/core": "8.5.3",
+    "@capacitor/filesystem": "8.1.5",
+    "@capacitor/haptics": "8.0.2",
+    "@capacitor/ios": "8.5.3",
+    "@capacitor/network": "8.0.1",
+    "@capacitor/share": "8.0.3",
+    "@capacitor/splash-screen": "8.0.2"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "8.5.3"
+  }
+}
